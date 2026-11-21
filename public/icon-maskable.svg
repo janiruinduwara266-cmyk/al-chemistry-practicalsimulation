@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgMask" cx="35%" cy="25%" r="85%">
+      <stop offset="0%" stop-color="#1E3F4B" />
+      <stop offset="55%" stop-color="#162229" />
+      <stop offset="100%" stop-color="#160F0A" />
+    </radialGradient>
+    <linearGradient id="amberLiquidMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <linearGradient id="cyanOrbitMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD" />
+      <stop offset="100%" stop-color="#0EA5E9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed solid/gradient canvas for Android adaptive maskable safe zone (15% padding) -->
+  <rect width="512" height="512" fill="url(#bgMask)" />
+
+  <g transform="translate(256 256) scale(0.72) translate(-256 -256)">
+    <g transform="translate(256 246)" fill="none" stroke="url(#cyanOrbitMask)" stroke-width="12" stroke-opacity="0.9">
+      <ellipse rx="158" ry="62" transform="rotate(-28)" />
+      <ellipse rx="158" ry="62" transform="rotate(28)" />
+      <ellipse rx="158" ry="62" transform="rotate(90)" stroke="#FDE047" stroke-opacity="0.65" stroke-width="10" />
+    </g>
+
+    <circle cx="118" cy="176" r="15" fill="#38BDF8" stroke="#FFFFFF" stroke-width="4" />
+    <circle cx="394" cy="316" r="15" fill="#38BDF8" stroke="#FFFFFF" stroke-width="4" />
+    <circle cx="256" cy="88" r="14" fill="#FACC15" stroke="#FFFFFF" stroke-width="4" />
+
+    <g transform="translate(256 254)">
+      <path d="M-28 -86 H28 V-34 L78 58 C86 73 75 92 58 92 H-58 C-75 92 -86 73 -78 58 L-28 -34 Z"
+            fill="#0F172A" fill-opacity="0.78" stroke="#FFF7E6" stroke-width="10" stroke-linejoin="round" />
+      <path d="M-47 22 H47 L67 59 C72 68 65 80 54 80 H-54 C-65 80 -72 68 -67 59 Z"
+            fill="url(#amberLiquidMask)" />
+      <rect x="-38" y="-98" width="76" height="16" rx="8" fill="#FFE5AD" />
+      <circle cx="-18" cy="48" r="7" fill="#FEF9C3" />
+      <circle cx="16" cy="58" r="9" fill="#FEF9C3" />
+      <circle cx="4" cy="34" r="5" fill="#FFFFFF" />
+    </g>
+  </g>
+</svg>
